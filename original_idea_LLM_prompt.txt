@@ -1,0 +1,17 @@
+I am a track and cross country coach and I often have to get splits for my athletes for various races and workouts.
+
+I need a python program to help me make this easier.
+
+i need to be able to write to a config file the settings of the program (json format).
+
+The program should allow me to add n number of timers and name them (for example, an atheltes name). It should keep track of which number each timer has (for example, timer 1, name: athlete1).
+
+each timer should have a split button on it so i can press a split for any athelete and see what split they are on. it should show total time, current split, and show previous split.
+
+as the splits come in, the timers should automatically be re-organized based first on order of splits (greatest number of splits go to top); then secondly sort by total time of sum of all current splits (smallest sum goes to top).
+
+also, in addtion to timers with associated field, the config file should allow me to create groups. There should be a default group; and then i can create n number of groups as i please. if a timer in a group has the same name field as a timer in another group, then those timers should be the same (i.e., you can have the same person part of more than one group; and thus whenever you obtain split times from one group for that person, the other timer should also be updated). The only difference might be the order of the timer (say group1, timer\_1, name1; group2, timer\_3, name1)
+
+when the user quits the program, a final split should be obtained for all timers, and the program should save all splits to an excel file based on the final state of all timers (for example the order the timers are displayed as per my logic i mentioned earlier).
+
+then another excel file should also be created showing some analysis of the results file (i.e. +/- time between splits, average split time, standard deviation of splits, etc.)

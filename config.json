@@ -1,0 +1,7 @@
+{
+    "groups": {
+      "default": ["Alice", "Bob", "Charlie"],
+      "varsity": ["Alice", "David"]
+    }
+  }
+  
